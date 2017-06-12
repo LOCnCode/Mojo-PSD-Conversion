@@ -1,0 +1,176 @@
+
+.services-title {
+	background-image: url(../images/services-bg.png);
+}
+
+.services-wrapper {
+	max-width: 100%;
+}
+
+.services-container { /*THIS IS THE WHOLE TOP ROW*/
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+	.services-image {
+		width: 50%;
+	}
+
+		.services-image img {
+			width: 100%;
+		}
+}
+
+.services-content-container { /*THIS IS THE RIGHT SIDE*/
+	width: 50%;
+	background-color: $tertiaryColor;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.numeral-container { /*THIS IS JUST THE NUMBER*/
+  width:20%;
+  padding-top: 10%;
+
+  .numeral {
+  	text-align: right;
+  	font-family: 'Source Sans Pro';
+ 	 	color: #d8d8d8;
+  	font-size: 73px;
+  	font-weight: 400;
+  }
+}
+
+.services-text { /*contains the tag, text & button.*/
+  width: 80%;
+  padding-top: 10%;
+  padding-left: 2%;
+
+  	p {
+  		width: 50%;
+  	}
+}
+
+.services-tag { /*this is just the tag*/
+	margin-top: 4%;
+  text-transform: uppercase;
+}
+
+.services-tag:after {
+	content: '';
+  background-color: #$secondaryColor;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  left: 22%;
+  top: 33%;
+}
+
+.row-2 {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+
+@media (max-width: 1170px) {
+
+	.services-container {
+    width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.services-container { /*THIS IS THE WHOLE TOP ROW*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .services-image {
+    width: 85%;
+  }
+
+    .services-image img {
+      width: 100%;
+    }
+}
+
+.services-content-container { /*THIS IS THE RIGHT SIDE*/
+  width: 85%;
+}
+
+
+.services-text { /*contains the tag, text & button.*/
+  width: 70%;
+
+  	p {
+  		width: 80%;
+  		margin: 0;
+  	}
+}
+
+.numeral-container { /*THIS IS JUST THE NUMBER*/
+  width:30%;
+  padding-top: 5%;
+}
+
+.services-tag { /*this is just the tag*/
+	margin-top: 4%;
+  text-transform: uppercase;
+}
+
+.services-tag:after {
+	content: '';
+  background-color: #$secondaryColor;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  left: 32%;
+  top: 33%;
+}
+
+/* Portrait tablet and small desktops lightgreen*/
+@media (max-width: 940px) {
+
+body {
+	// background-color: lightgreen;
+}
+
+.services-tag:after {
+  top: 25%;
+}
+
+.numeral-container { /*THIS IS JUST THE NUMBER*/
+  padding-top: 7%;
+
+  .numeral {
+  	font-size: 60px;
+
+  }
+}
+
+
+}
+
+/* Landscape phone to portrait tablet lightpink*/
+@media (max-width: 768px) {
+
+    .services-container {
+      width: 100%;
+     
+    }
+  }
+
+
+/* Landscape phones and down lemonchiffon*/
+@media (max-width: 480px) {
+
+body {
+	// background-color: lemonchiffon
+}
+
+
+}

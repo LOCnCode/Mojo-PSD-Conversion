@@ -1,0 +1,67 @@
+
+
+.brands-gallery {
+	width: 100%;
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between; 
+	}
+}
+
+
+/* Portrait tablet and small desktops lightgreen*/
+@media (max-width: 940px) {
+
+.brands-gallery {
+	width: 100%;
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between; 
+	}
+
+		li {
+			width: calc(33.33% - 20px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet lightpink*/
+@media (max-width: 768px) {
+
+.brands-gallery {
+	width: 85%;
+	background-color: white;
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between; 
+	}
+
+		li {
+			width: calc(50% - 10px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+/* Landscape phones and down lemonchiffon*/
+@media (max-width: 480px) {
+
+// THIS SIZE IS OK BASED OFF OF 768PX
+
+}

@@ -1,0 +1,134 @@
+.about-top {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 2%;
+}
+
+.about-aside {
+	max-width: 40%;
+	padding: 0 2%;
+	color: rgba(0, 0, 0, 0.75);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 29px;
+	text-align: right;
+		.aside-highlight {
+			text-decoration: underline;
+		}
+			p {
+				margin: 0;
+			}
+}
+
+.about-content {
+	max-width: 60%;
+	padding: 0 2%;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $secondaryColor;
+	font-size: 16px;
+	font-weight: 400px;
+	text-align: justify;
+
+		p {
+			width: 80%;
+			font-size: 16px;
+		}
+}
+
+.list-container {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: left;
+}
+
+.about-list {
+	list-style-type: none;
+}
+
+.about-image img {
+	max-width: 100%;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+	.about-top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-aside {
+		max-width: 70%;
+		padding: 2%;
+		font-size: 20px;
+		line-height: 29px;
+		text-align: left;
+
+			.aside-highlight {
+				text-decoration: underline;
+				align-items: center;
+			}
+			p {
+				margin: 0;
+				font-size: 16px;
+			}
+	}
+
+	.about-content {
+		max-width: 70%;
+		text-align: justify;
+	}
+
+	.about-content {
+		max-width: 60%;
+		padding: 0 2%;
+		font-family: 'Source Sans Pro', sans-serif;
+		color: $secondaryColor;
+		font-size: 16px;
+		font-weight: 400px;
+		text-align: justify;
+
+		p {
+			width: 100%;
+			font-size: 16px;
+		}
+}
+
+
+	.about-list {
+		list-style-type: none;
+		font-size: 20px;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	.about-list {
+		padding: 0;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.about-content p {
+		// background-color: grey;	
+		font-size: 18px;
+	}
+
+	.about-list {
+		padding: 0;
+		width: 50%;
+		font-size: 18px;
+	}
+
+}

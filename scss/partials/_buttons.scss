@@ -1,0 +1,37 @@
+
+
+
+.button-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-container {
+  margin: 2.5%;
+}
+
+.button {
+  // width: 100%;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-family: 'Source Sans Pro';
+  color: $tertiaryColor;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border: 1px solid $tertiaryColor;
+  transition: background 0.5s;
+}
+
+.button:active {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.services-button {
+  color: $secondaryColor;
+   border: 1px solid $secondaryColor;
+}

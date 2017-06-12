@@ -1,0 +1,68 @@
+
+
+
+
+.title {
+	position: relative;
+	padding: 5%;
+
+	h2, h3 {
+		width: 100%;
+		display: flex;
+ 		align-items: center;
+  	justify-content: center;
+  	margin: 0;
+  	text-transform: uppercase;
+	}
+	h2 {		
+		color: $primaryColor;
+		font-size: 25px;
+		font-weight: 700; 
+		line-height: 37px;
+	}
+	h3 {
+		color: $secondaryColor;
+		font-size: 16px; /*13px*/
+		font-weight: 400;
+	}
+}
+
+.title:after {
+  content: '';
+  background-color: $secondaryColor;
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+	.title h2 {		
+		text-align: center;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+.title h2 {		
+	font-size: 25px;
+}
+
+.title h3 {
+	font-size: 22px; 
+}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+
+}
+
+/*END TITLES*/

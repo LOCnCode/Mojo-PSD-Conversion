@@ -1,0 +1,109 @@
+
+
+.testimonials-section {	
+	padding: 5%;
+}
+
+.testimony-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between; 
+}
+
+.testimony-icon {
+	width: 49px;
+	margin: 5%;
+}
+
+.testimony {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.testimony-highlight {
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
+
+.testimony-text {
+	text-align: center;
+	color: $secondaryColor;
+	padding: 3%;
+	line-height: 25px;
+}
+
+.speaker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	margin-bottom: 2%;
+
+		.speaker-name {
+			color: #1f1f1f;
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 3px;
+		}
+
+		.speaker-company {
+			color: $secondaryColor;
+			font-weight: 700;
+			padding: 5%;
+		}
+}
+
+.squares {
+	max-width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+		.box {
+			width: 15px;
+			height: 15px;
+			background-color: $secondaryColor;
+			margin: 0 -30%;
+		}
+
+		.box2 {
+			background-color: $primaryColor;
+		}
+}
+
+
+/* Portrait tablet and small desktops lightgreen */
+@media (max-width: 940px) {
+
+	.testimony-text {
+		font-size: 18px;
+	}
+
+	.speaker {
+		.speaker-name {
+			font-size: 16px;
+		}
+	}
+
+}
+
+/* Landscape phone to portrait tablet lightpink */
+@media (max-width: 768px) {
+
+	.testimony {
+		.testimony-highlight {
+			text-align: center;
+		}
+	}
+
+}
+
+/* Landscape phones and down lemonchiffon */
+@media (max-width: 480px) {
+
+
+
+}

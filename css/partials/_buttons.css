@@ -1,0 +1,24 @@
+.button-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-container {
+  margin: 2.5%;
+}
+
+.button {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border: 1px solid white;
+  transition: background 0.5s;
+}
+
+.button:active {
+  background: rgba(0, 0, 0, 0.8);
+}

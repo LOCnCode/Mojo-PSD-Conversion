@@ -1,0 +1,72 @@
+
+.section-scoreboard {
+	background-color: $primaryColor;
+}
+
+.scoreboard-container {
+	width: 100%;
+	padding-top: 8%;
+  padding-bottom: 8%;
+	display: flex;
+	flex-direction: row;
+	align-contents: center;
+	justify-content: space-around;
+}
+
+.scoreboard {
+	max-width: 25%;
+	color: $tertiaryColor;
+	display: flex;
+	// background-color: lightpink;
+
+		.score {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			p {
+				padding: 10px;
+			}
+		}
+}
+
+.highlight {
+	font-size: 25px;
+	font-weight: 400;
+}
+
+/* Portrait tablet and small desktops lightgreen*/
+@media (max-width: 940px) {
+
+// THIS IS FINE
+
+}
+
+/* Landscape phone to portrait tablet lightpink */
+@media (max-width: 768px) {
+
+	.scoreboard-container {
+			width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.scoreboard {
+		color: $tertiaryColor;
+		padding: 2% 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.score {
+			max-width: 85%;
+			display: flex;
+			flex-direction: row;
+		}
+
+	}
+}
+

@@ -1,0 +1,22 @@
+.gallery {
+  width: 100%;
+  background-color: lightpink;
+}
+
+.gallery .products-container {
+  background-color: lightblue;
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: 33.33%;
+  padding: 2%;
+  background-color: lightgreen;
+}
+
+.gallery-item img {
+  width: 100%;
+}

@@ -1,0 +1,91 @@
+
+
+
+.bucket-section {
+	width: 100%;
+	margin: 0;	
+}
+
+.bucket-wrapper {
+	max-width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.bucket-container { /*bucket-container*/
+	width: 100%;	
+	margin: 0;
+	border-left: 1px solid $secondaryColor;
+	border-bottom: 1px solid $secondaryColor;
+	padding: 2%;
+	}
+
+.bucket4 {
+	border-right: 1px solid $secondaryColor;
+}
+
+.bucket-text {
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 15px;
+	letter-spacing: 0.3px;
+	line-height: 24px;
+	color: $secondaryColor;
+}
+
+.bucket .icofont {
+	font-size: 40px;
+}
+
+/* Portrait tablet and small desktops lightgreen*/
+@media (max-width: 940px) {
+
+		.bucket-wrapper {
+			max-width: 85%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.bucket-container {
+				width: 43%;
+        margin: 1%;
+    		border: 1px solid #999;
+			}
+	}
+}
+
+
+// Landscape phone to portrait tablet 
+@media (max-width: 768px) {
+
+	// body {
+	// 	background-color: pink;
+	// }
+
+		.bucket-wrapper {
+			max-width: 70%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.bucket-container {
+				width: 100%;
+        margin: 1%;
+    		border: 1px solid #999;
+			}
+	}
+}
+
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+
+// body {
+// 	background-color: lemonchiffon;
+// }
+
+}

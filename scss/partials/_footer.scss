@@ -1,0 +1,134 @@
+
+footer {
+	background-color: #2a2a2a;
+	width: 100%;
+	color: $tertiaryColor;
+}
+
+.footer-container {
+	padding-top: 8%;
+}
+
+.footer-top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-links {
+	width: calc(33.33% - 20px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+
+	h5 {
+		font-size: 15px;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.copyright {
+	padding: 8%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-nav {
+	
+	width: 100%;
+	display: flex;
+
+}
+
+.footer-nav button {
+	padding: 1.5%;
+	flex: 1;
+	cursor: pointer;
+	transition: all 1s;
+	a {
+		color: $tertiaryColor;
+	}
+}
+
+.facebook-btn {
+	background-color: #3b5998;
+}
+
+.twitter-btn {
+	background-color: #4099FF;
+}
+
+.google-btn {
+	background-color: #d62d20;
+}
+
+.pinterest-btn {
+	background-color: #C92228;
+}
+
+.fa {
+	font-size: 22px;
+}
+
+
+/* Portrait tablet and small desktops lightgreen */
+@media (max-width: 940px) {
+
+	footer {
+		// background-color: lightblue;
+	}
+}
+
+/* Landscape phone to portrait tablet lightpink */
+@media (max-width: 768px) {
+
+	footer {
+		// background-color: green;
+	}
+
+	.footer-top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.footer-links {
+		width: 85%;
+		padding: 5%
+	}
+}
+
+/* Landscape phones and down lemonchiffon */
+@media (max-width: 480px) {
+
+	footer {
+		// background-color: purple;
+	}
+
+	.footer-links p {
+		font-size: 20px;
+	}
+
+	.footer-nav {		
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+			.footer-button {
+				width: 50%;
+			}
+	}
+
+
+}
