@@ -94,19 +94,15 @@
 		font-size: 16px;
 		font-weight: 400px;
 		text-align: justify;
-
 		p {
 			width: 100%;
 			font-size: 16px;
 		}
-}
-
-
+	}
 	.about-list {
 		list-style-type: none;
 		font-size: 20px;
 	}
-
 }
 
 /* Landscape phone to portrait tablet */
@@ -114,6 +110,14 @@
 
 	.about-list {
 		padding: 0;
+	}
+
+	.about-aside {
+		width: 80%;
+	}
+
+	.about-hide {
+		display: none;
 	}
 }
 
@@ -130,5 +134,4 @@
 		width: 50%;
 		font-size: 18px;
 	}
-
 }

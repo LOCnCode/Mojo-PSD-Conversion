@@ -60,12 +60,8 @@
 // Landscape phone to portrait tablet 
 @media (max-width: 768px) {
 
-	// body {
-	// 	background-color: pink;
-	// }
-
 		.bucket-wrapper {
-			max-width: 70%;
+			width: 95%;
 			margin: 0 auto;
 			display: flex;
 			flex-direction: row;
@@ -77,15 +73,13 @@
         margin: 1%;
     		border: 1px solid #999;
 			}
-	}
+		}
 }
 
 
 // /* Landscape phones and down */
 @media (max-width: 480px) {
 
-// body {
-// 	background-color: lemonchiffon;
-// }
+
 
 }

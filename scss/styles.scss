@@ -1,3 +1,6 @@
+
+@import "partials/variables";
+@import "partials/main";
 @import "partials/header";
 @import "partials/title";
 @import "partials/buttons";
@@ -12,73 +15,3 @@
 @import "partials/brands";
 @import "partials/footer";
 
-body {
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
-}
-
-.wrapper {
-	max-width: 1170px;
-	margin: 0 auto;
-	// background-color: lightblue;
-}
-
-.tag {
-	color: rgba(0, 0, 0, 0.75);
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 30px;
-}
-
-.icofont {
-	font-size: 30px;
-}
-
-$primaryColor: #000; /*black*/
-$secondaryColor: #999;  /*Gray60*/
-$tertiaryColor: #FFF; /*White*/
-
-
-
-
-
-
-
-
-
-
-
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-
-// body {
-// 	background-color: lightgreen;
-// }
-
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-
-// body {
-// 	background-color: lightpink;
-// }
-
-.tag {
-	color: rgba(0, 0, 0, 0.75);
-	font-size: 22px;
-	font-weight: 700;
-	line-height: 30px;
-}
-
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-
-// body {
-// 	background-color: lemonchiffon;
-// }
-
-}

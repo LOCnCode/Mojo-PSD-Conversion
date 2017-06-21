@@ -59,7 +59,7 @@
 
 .services-tag:after {
 	content: '';
-  background-color: #$secondaryColor;
+  background-color: $secondaryColor;
   width: 40px;
   height: 2px;
   position: absolute;
@@ -124,7 +124,7 @@
 
 .services-tag:after {
 	content: '';
-  background-color: #$secondaryColor;
+  background-color: $secondaryColor;
   width: 40px;
   height: 2px;
   position: absolute;
@@ -135,42 +135,45 @@
 /* Portrait tablet and small desktops lightgreen*/
 @media (max-width: 940px) {
 
-body {
-	// background-color: lightgreen;
-}
-
-.services-tag:after {
-  top: 25%;
-}
-
-.numeral-container { /*THIS IS JUST THE NUMBER*/
-  padding-top: 7%;
-
-  .numeral {
-  	font-size: 60px;
-
+  .services-tag:after {
+    top: 100px;
   }
-}
 
+  .numeral-container { /*THIS IS JUST THE NUMBER*/
+    padding-top: 7%;
 
+    .numeral {
+  	 font-size: 60px;
+    }
+  }  
 }
 
 /* Landscape phone to portrait tablet lightpink*/
 @media (max-width: 768px) {
 
-    .services-container {
-      width: 100%;
-     
-    }
+  .services-container {
+    width: 100%;     
   }
+
+  .services-content-container {
+    width: 100%;
+  }
+
+  .numeral-container {
+    width: 20%;
+  }
+
+  .services-tag:after {
+    left: 120px;
+  }
+
+  .button-container {
+    margin: 2% 0;
+  }
+ }
 
 
 /* Landscape phones and down lemonchiffon*/
 @media (max-width: 480px) {
-
-body {
-	// background-color: lemonchiffon
-}
-
 
 }

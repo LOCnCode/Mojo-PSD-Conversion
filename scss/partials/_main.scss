@@ -1,0 +1,44 @@
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.tag {
+	color: rgba(0, 0, 0, 0.75);
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.icofont {
+	font-size: 30px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	.tag {
+		color: rgba(0, 0, 0, 0.75);
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 30px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+}
