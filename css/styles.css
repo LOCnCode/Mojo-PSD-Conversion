@@ -342,7 +342,7 @@ body {
     margin: 2%; } }
 
 @media (max-width: 480px) {
-  .nav-right {
+  .header-nav-container .nav-split .nav-right {
     top: 175px;
     left: -8%; } }
 

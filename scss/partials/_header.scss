@@ -193,18 +193,6 @@
 	.header-nav-container .nav-right {
 			display: flex;
 			justify-content: flex-end; 
-
-				// .nav-right {
-				// 	 position: fixed;
-				// 	  top: 50px;
-				// 	  left: 50px;
-				// 	  z-index: 9999;
-							
-				// 			a {
-				// 				color: $secondaryColor;
-				// 				// box-shadow: 2px 2px 2px grey;
-				// 			}
-				// }
 		}
 
 		.nav-left {
@@ -227,8 +215,13 @@
 }
 
 @media (max-width: 480px) {
-	.nav-right {
-		top: 175px;
-    left: -8%;
-	}
+	
+		.header-nav-container {
+			.nav-split {
+				.nav-right {
+					top: 175px;
+					left: -8%;
+				}
+			}
+		}
 }
