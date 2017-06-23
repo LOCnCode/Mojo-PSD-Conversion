@@ -1,6 +1,7 @@
 
 .services-title {
 	background-image: url(../images/services-bg.png);
+  z-index: -2;
 }
 
 .services-wrapper {
@@ -27,6 +28,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
+  z-index: -2;
 }
 
 .numeral-container { /*THIS IS JUST THE NUMBER*/

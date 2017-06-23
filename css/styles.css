@@ -2,6 +2,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0; }
 
+section {
+  z-index: 0; }
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto; }
@@ -102,9 +105,12 @@ body {
     padding: 6px; }
   .nav-links a, .nav-projects a {
     text-decoration: none;
-    color: #FFF; }
+    color: white; }
   .nav-links a:hover, .nav-projects a:hover {
     background-color: black; }
+
+.nav-links {
+  z-index: 3; }
 
 .icon-container .business-icon {
   /*within nav-left*/
@@ -188,6 +194,15 @@ body {
     letter-spacing: 10px;
     margin: 0; }
 
+.toggle {
+  color: black;
+  cursor: pointer;
+  z-index: 999;
+  display: none; }
+
+input[type=checkbox], input[type=radio] {
+  display: none; }
+
 @media (max-width: 1125px) {
   /*HEADER ONLY BP*/
   .header-nav-container {
@@ -241,67 +256,8 @@ body {
     -ms-flex-pack: center;
     justify-content: center; } }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  .header-nav-container {
-    padding-top: 5%;
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .header-nav-container .nav-split {
-      margin-left: auto;
-      padding-right: 25px;
-      margin-right: initial;
-      margin-bottom: initial;
-      margin-top: initial; }
-      .header-nav-container .nav-split .nav-right {
-        position: fixed;
-        top: 50px;
-        left: 80%;
-        z-index: 9999; }
-        .header-nav-container .nav-split .nav-right a {
-          color: #999; }
-  .nav-left {
-    width: 85%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row-reversal;
-    -ms-flex-direction: row-reversal;
-    flex-direction: row-reversal;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
-  .nav-links {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: right; }
-  .intro h1 {
-    font-size: 20px; } }
-
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header-nav-container .nav-right {
     display: -webkit-box;
     display: -webkit-flex;
@@ -339,16 +295,60 @@ body {
   .intro h1 {
     font-size: 16px;
     text-align: center;
-    margin: 2%; } }
-
-@media (max-width: 480px) {
-  .header-nav-container .nav-split .nav-right {
-    top: 175px;
-    left: -8%; } }
+    margin: 2%; }
+  .toggle {
+    display: unset;
+    top: 27px;
+    right: 0;
+    width: 10%; }
+  .nav-right {
+    width: 100%;
+    position: fixed; }
+  .nav-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 35px;
+    left: 0px;
+    padding: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    padding: 22px;
+    display: none;
+    height: 100vh; }
+    .nav-links li {
+      padding: 7px 0px;
+      font-size: 22px; }
+      .nav-links li a {
+        color: blue; }
+      .nav-links li a:hover {
+        color: green; }
+  .fa {
+    font-size: 26px;
+    margin: 0 5px; }
+  input#toggle:checked + .nav-links {
+    display: block; }
+  input#toggle {
+    display: none; }
+  label[for="toggle"] {
+    position: fixed;
+    top: 32px;
+    padding: 3%;
+    right: 15px; } }
 
 .title {
   position: relative;
-  padding: 5%; }
+  padding: 5%;
+  z-index: -2; }
   .title h2, .title h3 {
     width: 100%;
     display: -webkit-box;
@@ -660,7 +660,8 @@ body {
     font-size: 18px; } }
 
 .services-title {
-  background-image: url(../images/services-bg.png); }
+  background-image: url(../images/services-bg.png);
+  z-index: -2; }
 
 .services-wrapper {
   max-width: 100%; }
@@ -695,7 +696,8 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  z-index: -2; }
 
 .numeral-container {
   /*THIS IS JUST THE NUMBER*/
@@ -1016,7 +1018,8 @@ p {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .gallery .gallery-item {
-      width: calc(50% - 10px); } }
+      width: calc(50% - 10px);
+      z-index: -2; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -1067,7 +1070,8 @@ p {
 .profile {
   width: calc(33.33% - 20px);
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -2; }
   .profile img {
     width: 100%; }
 
