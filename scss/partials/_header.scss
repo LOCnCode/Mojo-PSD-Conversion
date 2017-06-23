@@ -13,15 +13,14 @@
 	display: flex;
 	flex-direction: row;
 	padding-top: 1%;
-
 		.nav-split {
 			position: relative;
 			margin: auto;
+			z-index: 6;
 		}
 }
 
 .nav-left {
-	width: 49%;
 	display: flex;
 	flex-direction: row;
 	align-content: flex-start;
@@ -109,6 +108,7 @@
 }
 
 .toggle {
+	background-color: white;
 	color: black;
 	cursor: pointer;
 	z-index: 999;
@@ -128,12 +128,6 @@ input[type=checkbox], input[type=radio] {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.nav-left {
-		display: flex;
-		flex-direction: row;
-		justify-content: center; 
 	}
 }
 
@@ -158,16 +152,7 @@ input[type=checkbox], input[type=radio] {
 			display: flex;
 			justify-content: flex-end; 
 		}
-		.nav-left {
-			width: 85%;
-			display: flex;
-			flex-direction: row-reversal;
-			justify-content: flex-end; 
-		}
-		.nav-links {
-			display: flex;
-			flex-direction: column;
-		}
+
 		.intro h1 {
 			font-size: 16px;
 	    text-align: center;
@@ -176,9 +161,8 @@ input[type=checkbox], input[type=radio] {
 
 	.toggle {
 			display: unset;
-			top: 27px;
+			top: 0px;
 			right: 0;
-	    width: 10%;
 		}
 
 	.nav-right {
@@ -191,7 +175,7 @@ input[type=checkbox], input[type=radio] {
 		flex-direction: column;
 	  text-align: center;
     position: fixed;
-    top: 35px;
+    top: 0px;
     left: 0px;
     padding: 0;
     width: 100%;
@@ -201,13 +185,14 @@ input[type=checkbox], input[type=radio] {
     display: none;
     height: 100vh;
     li {
-    	  padding: 7px 0px;
-    		font-size: 22px;
+    	padding: 12px 0px;
+	    font-size: 22px;
+	    margin-top: 20px;
     	a {
-    		color: blue;
+    		color: black;
     	}
 			a:hover {
-				color: green;
+				color: grey;
 			}
     }
 	}
@@ -228,7 +213,7 @@ input[type=checkbox], input[type=radio] {
 	label[for="toggle"] {
 	  position: fixed;
 	  top: 32px;
-    padding: 3%;
-    right: 15px;
+    padding: 10px;
+    right: 30px;
 	}	
 }

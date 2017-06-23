@@ -50,10 +50,10 @@ section {
   padding-top: 1%; }
   .header-nav-container .nav-split {
     position: relative;
-    margin: auto; }
+    margin: auto;
+    z-index: 6; }
 
 .nav-left {
-  width: 49%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -195,6 +195,7 @@ section {
     margin: 0; }
 
 .toggle {
+  background-color: white;
   color: black;
   cursor: pointer;
   z-index: 999;
@@ -219,20 +220,6 @@ input[type=checkbox], input[type=radio] {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .nav-left {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -267,40 +254,14 @@ input[type=checkbox], input[type=radio] {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
-  .nav-left {
-    width: 85%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row-reversal;
-    -ms-flex-direction: row-reversal;
-    flex-direction: row-reversal;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
-  .nav-links {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
   .intro h1 {
     font-size: 16px;
     text-align: center;
     margin: 2%; }
   .toggle {
     display: unset;
-    top: 27px;
-    right: 0;
-    width: 10%; }
+    top: 0px;
+    right: 0; }
   .nav-right {
     width: 100%;
     position: fixed; }
@@ -316,7 +277,7 @@ input[type=checkbox], input[type=radio] {
     flex-direction: column;
     text-align: center;
     position: fixed;
-    top: 35px;
+    top: 0px;
     left: 0px;
     padding: 0;
     width: 100%;
@@ -326,12 +287,13 @@ input[type=checkbox], input[type=radio] {
     display: none;
     height: 100vh; }
     .nav-links li {
-      padding: 7px 0px;
-      font-size: 22px; }
+      padding: 12px 0px;
+      font-size: 22px;
+      margin-top: 20px; }
       .nav-links li a {
-        color: blue; }
+        color: black; }
       .nav-links li a:hover {
-        color: green; }
+        color: grey; }
   .fa {
     font-size: 26px;
     margin: 0 5px; }
@@ -342,8 +304,8 @@ input[type=checkbox], input[type=radio] {
   label[for="toggle"] {
     position: fixed;
     top: 32px;
-    padding: 3%;
-    right: 15px; } }
+    padding: 10px;
+    right: 30px; } }
 
 .title {
   position: relative;
@@ -1071,7 +1033,7 @@ p {
   width: calc(33.33% - 20px);
   position: relative;
   overflow: hidden;
-  z-index: -2; }
+  z-index: 0; }
   .profile img {
     width: 100%; }
 
