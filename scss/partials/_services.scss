@@ -5,30 +5,34 @@
 }
 
 .services-wrapper {
-	max-width: 100%;
+	width: 100%;
 }
 
-.services-container { /*THIS IS THE WHOLE TOP ROW*/
-	width: 100%;
+.row-1 { /*THIS IS THE WHOLE TOP ROW*/
 	display: flex;
 	flex-direction: row;
+  flex-wrap: wrap;
+}
 
-	.services-image {
-		width: 50%;
-	}
+.services-image {
+	width: 50%;
+  display: inline;
+  img {
+    width: 100%;
+  }
+}
 
-		.services-image img {
-			width: 100%;
-		}
+.services-details {
+  width: 50%;
+  display: inline;
 }
 
 .services-content-container { /*THIS IS THE RIGHT SIDE*/
-	width: 50%;
-	background-color: $tertiaryColor;
+	width: 100%;
 	position: relative;
 	display: flex;
 	flex-direction: row;
-  z-index: -2;
+  z-index: 0;
 }
 
 .numeral-container { /*THIS IS JUST THE NUMBER*/
@@ -48,7 +52,6 @@
   width: 80%;
   padding-top: 10%;
   padding-left: 2%;
-
   	p {
   		width: 50%;
   	}
@@ -61,7 +64,7 @@
 
 .services-tag:after {
 	content: '';
-  background-color: $secondaryColor;
+  background-color: grey;
   width: 40px;
   height: 2px;
   position: absolute;
@@ -74,64 +77,39 @@
 	flex-direction: row-reverse;
 }
 
-
 @media (max-width: 1170px) {
 
 	.services-container {
     width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 	}
-}
 
-.services-container { /*THIS IS THE WHOLE TOP ROW*/
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-  .services-image {
-    width: 85%;
+  .services-text { /*contains the tag, text & button.*/
+    width: 70%;
+    	p {
+    		width: 80%;
+    		margin: 0;
+    	}
   }
 
-    .services-image img {
-      width: 100%;
-    }
-}
+  .numeral-container { /*THIS IS JUST THE NUMBER*/
+    width:30%;
+    padding-top: 5%;
+  }
 
-.services-content-container { /*THIS IS THE RIGHT SIDE*/
-  width: 85%;
-}
+  .services-tag { /*this is just the tag*/
+  	margin-top: 4%;
+    text-transform: uppercase;
+  }
 
-
-.services-text { /*contains the tag, text & button.*/
-  width: 70%;
-
-  	p {
-  		width: 80%;
-  		margin: 0;
-  	}
-}
-
-.numeral-container { /*THIS IS JUST THE NUMBER*/
-  width:30%;
-  padding-top: 5%;
-}
-
-.services-tag { /*this is just the tag*/
-	margin-top: 4%;
-  text-transform: uppercase;
-}
-
-.services-tag:after {
-	content: '';
-  background-color: $secondaryColor;
-  width: 40px;
-  height: 2px;
-  position: absolute;
-  left: 32%;
-  top: 33%;
+  .services-tag:after {
+  	content: '';
+    background-color: $secondaryColor;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: 32%;
+    top: 33%;
+  }
 }
 
 /* Portrait tablet and small desktops lightgreen*/

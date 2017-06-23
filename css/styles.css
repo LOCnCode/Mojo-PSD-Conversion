@@ -626,11 +626,10 @@ input[type=checkbox], input[type=radio] {
   z-index: -2; }
 
 .services-wrapper {
-  max-width: 100%; }
+  width: 100%; }
 
-.services-container {
+.row-1 {
   /*THIS IS THE WHOLE TOP ROW*/
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -639,16 +638,24 @@ input[type=checkbox], input[type=radio] {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
-  .services-container .services-image {
-    width: 50%; }
-  .services-container .services-image img {
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.services-image {
+  width: 50%;
+  display: inline; }
+  .services-image img {
     width: 100%; }
+
+.services-details {
+  width: 50%;
+  display: inline; }
 
 .services-content-container {
   /*THIS IS THE RIGHT SIDE*/
-  width: 50%;
-  background-color: #FFF;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -659,7 +666,7 @@ input[type=checkbox], input[type=radio] {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  z-index: -2; }
+  z-index: 0; }
 
 .numeral-container {
   /*THIS IS JUST THE NUMBER*/
@@ -687,7 +694,7 @@ input[type=checkbox], input[type=radio] {
 
 .services-tag:after {
   content: '';
-  background-color: #999;
+  background-color: grey;
   width: 40px;
   height: 2px;
   position: absolute;
@@ -707,71 +714,29 @@ input[type=checkbox], input[type=radio] {
 
 @media (max-width: 1170px) {
   .services-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
-
-.services-container {
-  /*THIS IS THE WHOLE TOP ROW*/
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  .services-container .services-image {
-    width: 85%; }
-  .services-container .services-image img {
     width: 100%; }
-
-.services-content-container {
-  /*THIS IS THE RIGHT SIDE*/
-  width: 85%; }
-
-.services-text {
-  /*contains the tag, text & button.*/
-  width: 70%; }
-  .services-text p {
-    width: 80%;
-    margin: 0; }
-
-.numeral-container {
-  /*THIS IS JUST THE NUMBER*/
-  width: 30%;
-  padding-top: 5%; }
-
-.services-tag {
-  /*this is just the tag*/
-  margin-top: 4%;
-  text-transform: uppercase; }
-
-.services-tag:after {
-  content: '';
-  background-color: #999;
-  width: 40px;
-  height: 2px;
-  position: absolute;
-  left: 32%;
-  top: 33%; }
+  .services-text {
+    /*contains the tag, text & button.*/
+    width: 70%; }
+    .services-text p {
+      width: 80%;
+      margin: 0; }
+  .numeral-container {
+    /*THIS IS JUST THE NUMBER*/
+    width: 30%;
+    padding-top: 5%; }
+  .services-tag {
+    /*this is just the tag*/
+    margin-top: 4%;
+    text-transform: uppercase; }
+  .services-tag:after {
+    content: '';
+    background-color: #999;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: 32%;
+    top: 33%; } }
 
 /* Portrait tablet and small desktops lightgreen*/
 @media (max-width: 940px) {
